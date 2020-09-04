@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetJWT_Default_Auth", "DotNetJWT_Default_Auth\DotNetJWT_Default_Auth.csproj", "{FC42E5A9-0892-4337-A2BC-5901305BC9BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetJWT_Default_Auth_With_Swagger", "DotNetJWT_Default_Auth_With_Swagger\DotNetJWT_Default_Auth_With_Swagger.csproj", "{2D4264CA-821E-47FE-9106-1B7E8CBEAF84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetJWT_Manually_Validate_Token_Auth", "DotNetJWT_Manually_Validate_Token_Auth\DotNetJWT_Manually_Validate_Token_Auth.csproj", "{9901F60F-15DF-4716-85F3-A90D007ADA41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetJWT_Self_Issue_Token_Auth", "DotNetJWT_Self_Issue_Token_Auth\DotNetJWT_Self_Issue_Token_Auth.csproj", "{CA722979-BD15-49DB-8F85-50C6A58EDD59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetJWT_Self_Issue_Token_Auth_and_AZ", "DotNetJWT_Self_Issue_Token_Auth_and_AZ\DotNetJWT_Self_Issue_Token_Auth_and_AZ.csproj", "{EB9CACF7-C4F6-4D70-A75C-1A4EF00F8C3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetJWT_Default_Auth_With_Static_Auth", "DotNetJWT_Default_Auth_With_Static_Auth\DotNetJWT_Default_Auth_With_Static_Auth.csproj", "{B0B3D1D0-0D74-414D-95E1-90E23121E8E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC42E5A9-0892-4337-A2BC-5901305BC9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC42E5A9-0892-4337-A2BC-5901305BC9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC42E5A9-0892-4337-A2BC-5901305BC9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC42E5A9-0892-4337-A2BC-5901305BC9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4264CA-821E-47FE-9106-1B7E8CBEAF84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4264CA-821E-47FE-9106-1B7E8CBEAF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4264CA-821E-47FE-9106-1B7E8CBEAF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4264CA-821E-47FE-9106-1B7E8CBEAF84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9901F60F-15DF-4716-85F3-A90D007ADA41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9901F60F-15DF-4716-85F3-A90D007ADA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9901F60F-15DF-4716-85F3-A90D007ADA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9901F60F-15DF-4716-85F3-A90D007ADA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA722979-BD15-49DB-8F85-50C6A58EDD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA722979-BD15-49DB-8F85-50C6A58EDD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA722979-BD15-49DB-8F85-50C6A58EDD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA722979-BD15-49DB-8F85-50C6A58EDD59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB9CACF7-C4F6-4D70-A75C-1A4EF00F8C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9CACF7-C4F6-4D70-A75C-1A4EF00F8C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9CACF7-C4F6-4D70-A75C-1A4EF00F8C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9CACF7-C4F6-4D70-A75C-1A4EF00F8C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B3D1D0-0D74-414D-95E1-90E23121E8E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B3D1D0-0D74-414D-95E1-90E23121E8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B3D1D0-0D74-414D-95E1-90E23121E8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B3D1D0-0D74-414D-95E1-90E23121E8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {127EEA94-E7AA-4E4E-A2DA-402BDC24B4FB}
+	EndGlobalSection
+EndGlobal
