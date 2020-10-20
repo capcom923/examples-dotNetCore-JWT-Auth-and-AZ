@@ -28,11 +28,11 @@ namespace DotNetJWT_Self_Issue_Token_Auth_and_AZ.Controllers
         public string Get1()
         {
             var claims = new[] {
+                    new Claim(ClaimTypes.Name, "myName1"),
                     new Claim(JwtRegisteredClaimNames.Sub, "subid-1"),
                     new Claim(JwtRegisteredClaimNames.Email, "a@b.com"),
                     new Claim(ClaimTypes.Role, "role1"),
                     new Claim(ClaimTypes.Role, "role2"),
-                    new Claim("Claim1", "anything"),
                     new Claim("Age", "28")
                 };
 

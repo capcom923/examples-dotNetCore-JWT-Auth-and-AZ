@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DotNetJWT_Self_Issue_Token_Auth_and_AZ.AuthEvents;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -31,6 +32,7 @@ namespace DotNetJWT_Self_Issue_Token_Auth_and_AZ
             string pem = Configuration["InternalToken:RsaPublicKeyInPem"];
             var pubKey = RsaUtils.CreateRsaPublicKeyByPem(pem);
 
+            services.AddScoped<MyAuthenticateEvents>();
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("CustomPolicyRequirement", policy => policy.Requirements.Add(new MinAgePolicyRequirement(18)));
@@ -44,6 +46,11 @@ namespace DotNetJWT_Self_Issue_Token_Auth_and_AZ
                 options.AddPolicy("IsInRolePolicy", policy => policy
                        .RequireAssertion(context =>
                                 context.User.IsInRole("role2")
+                                )
+                   );
+                options.AddPolicy("DynamicClaimPolicy", policy => policy
+                       .RequireAssertion(context =>
+                                context.User.HasClaim(c => (c.Type == "ClaimAddDynamically"))
                                 )
                    );
             })
@@ -62,6 +69,7 @@ namespace DotNetJWT_Self_Issue_Token_Auth_and_AZ
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = pubKey
                 };
+                options.EventsType = typeof(MyAuthenticateEvents);
             });
             services.AddSingleton<IAuthorizationHandler, MinAgeHandler>();
         }

@@ -28,6 +28,8 @@ namespace DotNetJWT_Self_Issue_Token_Auth.Controllers
         public string Get1()
         {
             var claims = new[] {
+                    new Claim(ClaimTypes.Name, "name-1"),//these 2 line will do the same thing, set your httpContextAccessor.HttpContext.User.Identity.Name
+                    new Claim("unique_name", "name-2"),//these 2 line will do the same thing, set your httpContextAccessor.HttpContext.User.Identity.Name
                     new Claim(JwtRegisteredClaimNames.Sub, "subid-1"),
                     new Claim(JwtRegisteredClaimNames.Email, "a@b.com"),
                     new Claim(ClaimTypes.Role, "role1"),
