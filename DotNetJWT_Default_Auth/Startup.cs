@@ -44,6 +44,7 @@ namespace DotNetJWT_Default_Auth
                     //ValidateLifetime = false,
                     //ValidateIssuer = false,
                 };
+                //options.MetadataAddress = $"{issuer}/oauth2/v1/.well-known/openid-configuration";
             });
         }
 
